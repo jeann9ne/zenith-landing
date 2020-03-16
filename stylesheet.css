@@ -1,0 +1,81 @@
+:root {
+  --zen-gradient: linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%);
+  --zen-gradient-reversed: linear-gradient(229.93deg, #007BFF -21.91%, #AB00FF 133.89%)
+  --menu-speed: 0.75s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Futura", sans-serif;
+  src: url("zenith-assets/fonts/futura-book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FuturaHV", sans-serif;
+  src: url("zenith-assets/fonts/futura-heavy.ttf") format("truetype");
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Futura", sans-serif;
+}
+
+body {
+  font-family: "Futura", sans-serif;
+}
+
+.header-logo {
+  width: 160px;
+}
+
+.menu {
+  display: none;
+}
+
+.hero {
+  width: 609px;
+  height: 812px;
+  background-image: url(zenith-assets/images/backgrounds/hero-bg-texture.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 609px;
+}
+
+.hero--catchline {
+  width: 307px;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 0.5px;
+}
+
+.hero img {
+  width: 345px;
+  height: 116px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-width: 764px) {
+  .header-logo {
+    width: 212px;
+  }
+
+  .menu {
+    display: inline-block;
+  }
+
+  .hero {
+    width: 609px;
+    height: 481px;
+    background-image: url(zenith-assets/images/backgrounds/hero-bg-cards.png), url(zenith-assets/images/backgrounds/hero-bg-texture.png);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
