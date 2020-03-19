@@ -170,7 +170,6 @@ body {
   width: 345px;
   margin-left: var(--margin-side);
   margin-right: var(--margin-side);
-  margin-bottom: 60px;
   display: grid;
   grid-template-columns: 115px, 115px, 115px;
   grid-template-rows: repeat(3, 40px);
@@ -230,13 +229,17 @@ body {
 }
 
 .footer {
+  display: grid;
+  grid-template-columns: 15px auto auto auto 15px;
+  grid-template-rows: 25% 20% 20% 20% 15%;
   height: 551px;
-  margin-top: 60px;
+  margin-top: 110px;
   background: var(--zen-gradient);
 }
 
 .footer--title {
-  margin-top: 33px;
+  grid-area: 1/span 5;
+  margin-top: 60px;
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
@@ -244,6 +247,41 @@ body {
   text-align: center;
   vertical-align: center;
   letter-spacing: 0.5px;
+}
+
+.footer--email {
+  font-family: "Futura";
+  width: 211px;
+  height: 35px;
+  border-radius: 34.5px;
+  border: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+  grid-column-start: 2;
+}
+
+.footer--submit {
+  font-family: "Futura";
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 13px;
+  width: 118px;
+  height: 35px;
+  border-radius: 34.5px;
+  background-color: #FFFFFF;
+  color: #6234ff;
+  grid-column-end: 4;
+  justify-self: end;
+}
+
+.footer--links {
+  list-style: none;
+  text-align: right;
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+
+.footer--links ul li a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 764px) {
