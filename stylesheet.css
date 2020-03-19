@@ -231,7 +231,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 15px auto auto auto 15px;
-  grid-template-rows: 25% 20% 20% 20% 15%;
+  grid-template-rows: 25% 20% 30% 20% 5%;
   height: 551px;
   margin-top: 110px;
   background: var(--zen-gradient);
@@ -250,13 +250,22 @@ body {
 }
 
 .footer--email {
-  font-family: "Futura";
+  font-family: Futura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
   width: 211px;
   height: 35px;
+  padding-left: 30px;
   border-radius: 34.5px;
   border: rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.4);
   grid-column-start: 2;
+}
+
+.footer--email input {
+  color: #FFFFFF;
 }
 
 .footer--submit {
@@ -273,15 +282,25 @@ body {
   justify-self: end;
 }
 
+input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
 .footer--links {
   list-style: none;
   text-align: right;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 1.04167px;
   grid-column-start: 3;
   grid-row-start: 4;
 }
 
-.footer--links ul li a {
+.footer--links a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 @media only screen and (min-width: 764px) {
